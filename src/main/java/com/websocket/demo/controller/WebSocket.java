@@ -13,8 +13,6 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 @ServerEndpoint("/webSocket/{username}")
 
-//端口看看，webSocket的
-
 public class WebSocket {
     //@ServerEndpoint("/webSocket/{username}")
     private static Map<String, WebSocket> clients = new ConcurrentHashMap<String, WebSocket>();
